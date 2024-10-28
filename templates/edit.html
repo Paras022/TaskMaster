@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block head %}
+TaskMaster
+{% endblock %}
+
+{% block body  %}
+<div class="content">
+    <h2>Edit Your Task</h2>
+    <form action="/edit/{{task.id}}" method="post">
+    <input type="text" name="content" id="content" value="{{task.content}}">
+    <input type="submit" value="edit">
+
+    </form>
+
+</div>
+{% endblock %}
